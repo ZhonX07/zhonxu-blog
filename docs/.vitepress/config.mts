@@ -17,6 +17,7 @@ export default defineConfig({
         text: 'Koishi',
         items: [
           { text: 'Koishi 新手教程：安装', link: '/koishi-guide-install' },
+          { text: 'Koishi 新手教程：配置', link: '/koishi-guide-config' },
         ]
       }
     ],
