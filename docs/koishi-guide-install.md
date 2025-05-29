@@ -9,7 +9,7 @@ Koishi 支持包括`MacOS`、`Windows`、`Linux`、`Docker`、`模板项目`以�
 
 首先，前往 [Koishi 官网](https://koishi.chat) 下载适合你版本的 Koishi，以 Windows 11 为例。  
 
-[![在 Windows 机器上部署 Koishi 的方式](./images/install/koi-windows.png)](https://koishi.chat/zh-CN/manual/starter/windows.html)  
+[![在 Windows 机器上部署 Koishi 的方式](/images/install/koi-windows.png)](https://koishi.chat/zh-CN/manual/starter/windows.html)  
 
 选择 `安装包 (.msi)` ，下载 Koishi 的 msi 安装包。
 
