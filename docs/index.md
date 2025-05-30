@@ -12,6 +12,6 @@ hero:
       link: /how-to-ask-a-question
     - theme: alt
       text: 新人上手 Koishi
-      link: /koishi-guide
+      link: /koishi-guide-install
 
 

@@ -4,6 +4,8 @@
 
 ![首次启动 Koishi](/images/config/koi-firstopen.png)
 
+### 同意与否并不重要，因为这不会影响你使用 Koishi 。
+
 ## 配置插件市场镜像源
 
 在开始任意操作之前，你都应该先配置插件市场的镜像源。  
