@@ -8,10 +8,10 @@ hero:
   tagline: Given enough eyeballs,all bugs are shallow.
   actions:
     - theme: brand
-      text: 提问的智慧
+      text: 教程：提问的智慧
       link: /how-to-ask-a-question
     - theme: alt
-      text: 新人上手 Koishi
+      text: 教程：新人上手 Koishi
       link: /koishi-guide-install
 
 
