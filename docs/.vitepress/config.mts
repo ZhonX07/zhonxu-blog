@@ -5,7 +5,7 @@ export default defineConfig({
   base,
   title: "ZhonXu 的个人博客",
   description: "基于 Vitepress",
-  appearance: 'dark', // 禁用主题切换功能
+  appearance: 'force-dark', // 禁用主题切换功能，并锁定为暗色模式
   themeConfig: {
     outline: {
       label: '本页内容'
