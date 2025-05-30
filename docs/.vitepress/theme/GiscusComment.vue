@@ -10,16 +10,17 @@ onMounted(() => {
   const script = document.createElement('script')
   script.src = 'https://giscus.app/client.js'
   script.setAttribute('data-repo', 'ZhonX07/zhonxu-blog')
-  script.setAttribute('data-repo-id', 'R_kgDOMQfyGw')
+  script.setAttribute('data-repo-id', 'R_kgDOOyofNQ')
   script.setAttribute('data-category', 'Announcements')
-  script.setAttribute('data-category-id', 'DIC_kwDOMQfyG84CjKZI')
+  script.setAttribute('data-category-id', 'DIC_kwDOOyofNc4Cqx6A')
   script.setAttribute('data-mapping', 'pathname')
-  script.setAttribute('data-strict', '0')
+  script.setAttribute('data-strict', '1')
   script.setAttribute('data-reactions-enabled', '1')
   script.setAttribute('data-emit-metadata', '0')
-  script.setAttribute('data-input-position', 'bottom')
-  script.setAttribute('data-theme', 'preferred_color_scheme')
+  script.setAttribute('data-input-position', 'top')
+  script.setAttribute('data-theme', 'noborder_dark')
   script.setAttribute('data-lang', 'zh-CN')
+  script.setAttribute('data-loading', 'lazy')
   script.setAttribute('crossorigin', 'anonymous')
   script.async = true
 
