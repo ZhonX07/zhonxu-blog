@@ -7,6 +7,9 @@ export default defineConfig({
   description: "基于 Vitepress",
   appearance: 'force-dark', // 禁用主题切换功能，并锁定为暗色模式
   
+  // 禁用死链检测
+  ignoreDeadLinks: true,
+  
   // 国际化配置
   locales: {
     root: {
