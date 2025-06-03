@@ -29,8 +29,8 @@ export default defineConfig({
         items: [
           { text: '入门 Koishi：安装部署', link: '/koishi-guide-install' },
           { text: '入门 Koishi：配置', link: '/koishi-guide-config' },
-          { text: 'Koishi 求助提问模板', link: '/question-model' },
-          { text: "提问的智慧", link: '/how-to-ask-a-question' }
+          { text: 'Koishi 求助提问模板', link: '/ASK-GUIDE' },
+          { text: "提问的智慧", link: '/SQ' }
         ]
       }
     ],

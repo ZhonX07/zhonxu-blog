@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 教程：提问的智慧
-      link: /how-to-ask-a-question
+      link: /SQ
     - theme: alt
       text: 教程：新人上手 Koishi
       link: /koishi-guide-install
