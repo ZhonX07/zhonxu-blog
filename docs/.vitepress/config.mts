@@ -46,6 +46,13 @@ export default defineConfig({
           prev: '⬅ 上一节',
           next: '➡ 下一节'
         },
+        notFound: {
+          title: 'U picked the wrong house fool!',
+          quote: `"你进错屋子了，蠢货！"——Big Smoke`,
+          linkLabel: '大斯莫克！是我，卡尔！冷静！冷静！',
+          linkText: '大斯莫克！是我，卡尔！冷静！冷静！',
+          code: '404'
+        },
         socialLinks: [
           { icon: 'github', link: 'https://github.com/ZhonX07' }
         ]
@@ -84,6 +91,13 @@ export default defineConfig({
         docFooter: {
           prev: '⬅ Previous',
           next: '➡ Next'
+        },
+        notFound: {
+          title: 'Page Not Found',
+          quote: 'You picked the wrong house, fool!',
+          linkLabel: 'Big smoke! It\'s me, Carl! Chill, chill!',
+          linkText: 'Big smoke! It\'s me, Carl! Chill, chill!',
+          code: '404'
         },
         socialLinks: [
           { icon: 'github', link: 'https://github.com/ZhonX07' }
