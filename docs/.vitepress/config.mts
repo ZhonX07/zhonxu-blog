@@ -10,6 +10,7 @@ export default defineConfig({
   
   // 禁用死链检测
   ignoreDeadLinks: true,
+  
   vite:{
     plugins:[pagefindPlugin()],
   },

@@ -1,6 +1,6 @@
 import DefaultTheme from 'vitepress/theme'
 import './styles/no-select.css' // 引入禁用文本选择的样式
-import MyLayout from './MyLayout.vue'
+import MyLayout from './Layout.vue'
 
 export default {
   ...DefaultTheme,
