@@ -15,35 +15,6 @@
 
 
 Copyright © 2001,2006,2014 Eric S. Raymond, Rick Moen
-
-| **Revision History**                                         |             |      |
-| ------------------------------------------------------------ | ----------- | ---- |
-| Revision 3.10                                                | 21 May 2014 | esr  |
-| New section on Stack Overflow.                               |             |      |
-| Revision 3.9                                                 | 23 Apr 2013 | esr  |
-| URL fixes.                                                   |             |      |
-| Revision 3.8                                                 | 19 Jun 2012 | esr  |
-| URL fix.                                                     |             |      |
-| Revision 3.7                                                 | 06 Dec 2010 | esr  |
-| Helpful hints for ESL speakers.                              |             |      |
-| Revision 3.7                                                 | 02 Nov 2010 | esr  |
-| Several translations have disappeared.                       |             |      |
-| Revision 3.6                                                 | 19 Mar 2008 | esr  |
-| Minor update and new links.                                  |             |      |
-| Revision 3.5                                                 | 2 Jan 2008  | esr  |
-| Typo fix and some translation links.                         |             |      |
-| Revision 3.4                                                 | 24 Mar 2007 | esr  |
-| New section, "When asking about code".                       |             |      |
-| Revision 3.3                                                 | 29 Sep 2006 | esr  |
-| Folded in a good suggestion from Kai Niggemann.              |             |      |
-| Revision 3.2                                                 | 10 Jan 2006 | esr  |
-| Folded in edits from Rick Moen.                              |             |      |
-| Revision 3.1                                                 | 28 Oct 2004 | esr  |
-| Document 'Google is your friend!'                            |             |      |
-| Revision 3.0                                                 | 2 Feb 2004  | esr  |
-| Major addition of stuff about proper etiquette on Web forums. |             |      |
-
-------
 ## Table of Contents
 
 - [Translations](#translations)
@@ -54,34 +25,34 @@ Copyright © 2001,2006,2014 Eric S. Raymond, Rick Moen
   * [Choose your forum carefully](#choose-your-forum-carefully)
   * [Stack Overflow](#stack-overflow)
   * [Web and IRC forums](#web-and-irc-forums)
-  * [As a second step, use project mailing lists](#as-a-second-step--use-project-mailing-lists)
-  * [Use meaningful, specific subject headers](#use-meaningful--specific-subject-headers)
+  * [As a second step, use project mailing lists](#as-a-second-step-use-project-mailing-lists)
+  * [Use meaningful, specific subject headers](#use-meaningful-specific-subject-headers)
   * [Make it easy to reply](#make-it-easy-to-reply)
-  * [Write in clear, grammatical, correctly-spelled language](#write-in-clear--grammatical--correctly-spelled-language)
-  * [Send questions in accessible, standard formats](#send-questions-in-accessible--standard-formats)
+  * [Write in clear, grammatical, correctly-spelled language](#write-in-clear-grammatical-correctly-spelled-language)
+  * [Send questions in accessible, standard formats](#send-questions-in-accessible-standard-formats)
   * [Be precise and informative about your problem](#be-precise-and-informative-about-your-problem)
   * [Volume is not precision](#volume-is-not-precision)
-  * [Don't rush to claim that you have found a bug](#don-t-rush-to-claim-that-you-have-found-a-bug)
+  * [Don't rush to claim that you have found a bug](#dont-rush-to-claim-that-you-have-found-a-bug)
   * [Grovelling is not a substitute for doing your homework](#grovelling-is-not-a-substitute-for-doing-your-homework)
-  * [Describe the problem's symptoms, not your guesses](#describe-the-problem-s-symptoms--not-your-guesses)
-  * [Describe your problem's symptoms in chronological order](#describe-your-problem-s-symptoms-in-chronological-order)
-  * [Describe the goal, not the step](#describe-the-goal--not-the-step)
-  * [Don't ask people to reply by private e-mail](#don-t-ask-people-to-reply-by-private-e-mail)
+  * [Describe the problem's symptoms, not your guesses](#describe-the-problems-symptoms-not-your-guesses)
+  * [Describe your problem's symptoms in chronological order](#describe-your-problems-symptoms-in-chronological-order)
+  * [Describe the goal, not the step](#describe-the-goal-not-the-step)
+  * [Don't ask people to reply by private e-mail](#dont-ask-people-to-reply-by-private-e-mail)
   * [Be explicit about your question](#be-explicit-about-your-question)
   * [When asking about code](#when-asking-about-code)
-  * [Don't post homework questions](#don-t-post-homework-questions)
+  * [Don't post homework questions](#dont-post-homework-questions)
   * [Prune pointless queries](#prune-pointless-queries)
-  * [Don't flag your question as “Urgent”, even if it is for you](#don-t-flag-your-question-as--urgent---even-if-it-is-for-you)
-  * [Courtesy never hurts, and sometimes helps](#courtesy-never-hurts--and-sometimes-helps)
+  * [Don't flag your question as "Urgent", even if it is for you](#dont-flag-your-question-as-urgent-even-if-it-is-for-you)
+  * [Courtesy never hurts, and sometimes helps](#courtesy-never-hurts-and-sometimes-helps)
   * [Follow up with a brief note on the solution](#follow-up-with-a-brief-note-on-the-solution)
 - [How To Interpret Answers](#how-to-interpret-answers)
-  * [RTFM and STFW: How To Tell You've Seriously Screwed Up](#rtfm-and-stfw--how-to-tell-you-ve-seriously-screwed-up)
-  * [If you don't understand...](#if-you-don-t-understand)
+  * [RTFM and STFW: How To Tell You've Seriously Screwed Up](#rtfmstfw)
+  * [If you don't understand...](#if-you-dont-understand)
   * [Dealing with rudeness](#dealing-with-rudeness)
 - [On Not Reacting Like A Loser](#on-not-reacting-like-a-loser)
 - [Questions Not To Ask](#questions-not-to-ask)
 - [Good and Bad Questions](#good-and-bad-questions)
-- [If You Can't Get An Answer](#if-you-can-t-get-an-answer)
+- [If You Can't Get An Answer](#if-you-cant-get-an-answer)
 - [How To Answer Questions in a Helpful Way](#how-to-answer-questions-in-a-helpful-way)
 - [Related Resources](#related-resources)
 - [Acknowledgements](#acknowledgements)
@@ -447,7 +418,7 @@ Among hackers, this sort of good followup behavior is actually more important th
 
 ## How To Interpret Answers
 
-### RTFM and STFW: How To Tell You've Seriously Screwed Up
+### RTFM and STFW: How To Tell You've Seriously Screwed Up {#rtfmstfw}
 
 There is an ancient and hallowed tradition: if you get a reply that reads “RTFM”, the person who sent it thinks you should have Read The Fucking Manual. He or she is almost certainly right. Go read it.
 

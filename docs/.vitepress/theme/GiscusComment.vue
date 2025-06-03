@@ -13,7 +13,7 @@ onMounted(() => {
   script.setAttribute('data-repo-id', 'R_kgDOOyofNQ')
   script.setAttribute('data-category', 'Announcements')
   script.setAttribute('data-category-id', 'DIC_kwDOOyofNc4Cqx6A')
-  script.setAttribute('data-mapping', 'title')
+  script.setAttribute('data-mapping', 'url')
   script.setAttribute('data-strict', '0')
   script.setAttribute('data-reactions-enabled', '1')
   script.setAttribute('data-emit-metadata', '0')
