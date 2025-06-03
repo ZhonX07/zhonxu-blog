@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@giscus/vue": "^3.1.1",
-    "pnpm": "^10.11.0"
+    "pnpm": "^10.11.0",
+    "vitepress-plugin-pagefind": "^0.4.13"
   }
 }
