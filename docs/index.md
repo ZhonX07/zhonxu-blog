@@ -13,7 +13,7 @@ hero:
       text: 教程：新人上手 Koishi
       link: /koishi-guide-install
     - theme: alt
-      text: 查看 GitHub
+      text: 查看作者的 GitHub
       link: https://github.com/ZhonX07
 
 features:
@@ -33,7 +33,7 @@ features:
     <ul class="recent-updates">
       <li><a href="/koishi-guide-install">Koishi 新手教程：安装部署</a></li>
       <li><a href="/koishi-guide-config">Koishi 新手教程：配置</a></li>
-      <li><a href="/SQ">提问的智慧</a></li>
+      <li><a href="/blog">使用 Github Pages 部署你的 Vitepress Blog</a></li>
     </ul>
     
   </div>

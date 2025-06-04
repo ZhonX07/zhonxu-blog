@@ -26,6 +26,12 @@ export default defineConfig({
           { text: 'Koishi 新手教程：安装', link: '/koishi-guide-install' },
           { text: 'Koishi 新手教程：配置', link: '/koishi-guide-config' },
         ]
+      },
+      {
+        text:'随笔',
+        items:[
+          { text: '使用 Github Pages 搭建你的博客',link:'/blog'}
+        ]
       }
     ],
     sidebar: [
@@ -35,7 +41,8 @@ export default defineConfig({
           { text: '入门 Koishi：安装部署', link: '/koishi-guide-install' },
           { text: '入门 Koishi：配置', link: '/koishi-guide-config' },
           { text: 'Koishi 求助提问指北', link: '/ASK-GUIDE' },
-          { text: "提问的智慧", link: '/SQ' }
+          { text: "提问的智慧", link: '/SQ' },
+          { text:'使用 Github Pages 搭建个人博客', link: '/blog' },
         ]
       }
     ],
