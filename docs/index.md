@@ -29,13 +29,13 @@ features:
   <div class="content-section">
     <h2>👋 欢迎来到我的博客</h2>
     <p>这里记录了我在开发过程中的学习笔记、教程分享和项目经验。</p>
-    
     <h3>⏱️ 最近更新</h3>
-    <ul>
+    <ul class="recent-updates">
       <li><a href="/koishi-guide-install">Koishi 新手教程：安装部署</a></li>
       <li><a href="/koishi-guide-config">Koishi 新手教程：配置</a></li>
       <li><a href="/SQ">提问的智慧</a></li>
     </ul>
+    
   </div>
   
   <div class="team-section">
@@ -54,6 +54,15 @@ features:
 
 .content-section {
   flex: 1;
+}
+
+.recent-updates {
+  padding-left: 1.2em;
+  margin: 1em 0;
+}
+
+.recent-updates li {
+  margin-bottom: 0.5em;
 }
 
 .team-section {
