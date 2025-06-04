@@ -28,26 +28,6 @@ features:
     details: 不定期更新内容，记录学习和开发过程
 ---
 
-<script setup>
-import { VPTeamMembers } from 'vitepress/theme'
-
-const members = [
-  {
-    avatar: 'https://www.github.com/ZhonX07.png',
-    name: 'ZhonXu',
-    title: '博客作者',
-    desc: '勇者よ、光が貴方と共にあらんことを。',
-    links: [
-      { icon: 'github', link: 'https://github.com/ZhonX07' }
-    ]
-  }
-]
-</script>
-
-## 关于作者
-
-<VPTeamMembers size="medium" :members="members" />
-
 ## 👋 欢迎来到我的博客
 
 这里记录了我在开发过程中的学习笔记、教程分享和项目经验。

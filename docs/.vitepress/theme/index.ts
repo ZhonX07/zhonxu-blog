@@ -2,13 +2,13 @@ import DefaultTheme from 'vitepress/theme'
 import giscusTalk from 'vitepress-plugin-comment-with-giscus'
 import { toRefs, watch } from 'vue'
 import { useData, useRoute } from 'vitepress'
-import './styles/index.css' // 修正路径：从 no-select.css 改为 index.css
-import './styles/no-select.css' // 保留禁用文本选择的样式
+import './styles/index.css'
+import './styles/no-select.css'
 
 // 彩虹背景动画样式
 let homePageStyle: HTMLStyleElement | undefined
 
-export default {
+const theme = {
   extends: DefaultTheme,
   enhanceApp({ app, router }) {
 
@@ -41,6 +41,8 @@ export default {
     }, true);
   }
 }
+
+export default theme
 
 function updateHomePageStyle(value: boolean) {
   if (value) {
