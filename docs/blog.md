@@ -99,7 +99,7 @@ npx vitepress init
 
 # 第二步：在 Github 创建并配置远程仓库
 
-打开 [Github](https://github.com) , 登录你的 Github 并按左上角的 `New` 新建一个仓库：
+打开 [Github](https://github.com) , 登录你的 Github 账号并按左上角的 `New` 新建一个仓库：
   
 ![新建仓库](/images/blog/newrepo.png)
 
@@ -111,7 +111,7 @@ npx vitepress init
 
 **在确保自己已经安装了 Git 的情况下，**
 
-设置 git 的用户名与邮箱，当然不一定要是你在注册 github 时所填入的。
+设置 git 的用户名与邮箱，当然最好要是你在注册 github 时所填入的，虽然不一致也可以。
 
 :::details 不一致会有哪些问题呢？
 **如果不一致**，GitHub 还是能接收代码，但显示为“匿名提交”，你就拿不到绿点贡献记录。
