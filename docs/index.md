@@ -39,7 +39,7 @@ features:
   </div>
   
   <div class="team-section">
-    <h2>关于作者</h2>
+    <h2>关于项目维护者</h2>
     <TeamMembers />
   </div>
 </div>

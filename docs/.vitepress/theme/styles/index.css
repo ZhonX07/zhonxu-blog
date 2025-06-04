@@ -3,3 +3,23 @@
 @import './vp-code.css';
 @import './rainbow.css';
 @import './blockquote.css';
+@import './fonts.css';
+
+/* 全局页面中文默认使用 OPPOSans，日文使用 HiraginoKaku */
+html, body {
+  font-family: 'OPPOSans', 'HiraginoKaku', sans-serif;
+}
+
+/* 根据 unicode 范围，粗略指定日文字体 */
+@supports (font-family: "HiraginoKaku") {
+  body {
+    font-family: 'OPPOSans', 'HiraginoKaku', sans-serif;
+  }
+
+  /* 精细控制日文字体（覆盖日文 Unicode 范围） */
+  html :lang(ja),
+  html :lang(ja-JP),
+  [lang="ja"] {
+    font-family: 'HiraginoKaku', 'OPPOSans', sans-serif;
+  }
+}

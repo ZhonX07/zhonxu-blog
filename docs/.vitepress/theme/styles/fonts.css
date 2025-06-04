@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'OPPOSans';
+  src: url('/fonts/OPPOSans.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: url('/fonts/JB.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HiraginoKaku';
+  src: url('/fonts/Hiragino.otf') format('opentype');
+}

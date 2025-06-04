@@ -29,6 +29,7 @@ npm add -D vitepress
 ```bash
 npm config set registry https://registry.npmmirror.com
 ```
+
 正常情况下，日志应该是这样的：
 ```bash
 PS G:\viteblog> npm add -D vitepress
@@ -38,12 +39,16 @@ added 125 packages in 15s
 38 packages are looking for funding
   run `npm fund` for details
 ```
+
 接下来启动 vitepress 安装向导（npm）：
+
 ```bash
 npx vitepress init
 ```
+
 在这一过程中你需要回答一些简单的问题：
 **推荐根据下面的设置来。**
+
 ```bash
 ┌  Welcome to VitePress!
 │
@@ -76,6 +81,7 @@ npx vitepress init
 <hr> 
 
 现在在终端输入 npm run docs:dev ，你应该看到：  
+
 ```bash
   vitepress v1.6.3
 
@@ -85,8 +91,9 @@ npx vitepress init
 ```
 
 在浏览器输入 `http://localhost:5173/` 或直接按住 `Ctrl` 单击链接（如果你使用的是 [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?launch=true&mode=full&hl=zh-cn&gl=cn&ocid=bingwebsearch) 的话）
+
 你应该会看到这样一个站点：
-![image|690x388](upload://sS3nLFymoWbtaMhlJOJButR285p.png)
+![初始化后的页面](/images/blog/init.png)
 
 恭喜你，完成了第一步。
 
@@ -94,10 +101,10 @@ npx vitepress init
 
 打开 [Github](https://github.com) , 登录你的 Github 并按左上角的 `New` 新建一个仓库：
   
-![image|690x388](upload://A0F9VzCS39Zrg2WeVbEvmkSiaUe.png)
+![新建仓库](/images/blog/newrepo.png)
 
-**[color=#fff][bgcolor=#FF4444]请勿勾选 `Add a README file` 和 `Add .gitignore` 。[/bgcolor]
-[/color]**
+**请勿勾选 `Add a README file` 和 `Add .gitignore` 。**
+
 现在你就有了一个名为 `blog-demo` 的仓库。
 
 现在回到终端。
@@ -106,9 +113,9 @@ npx vitepress init
 
 设置 git 的用户名与邮箱，当然不一定要是你在注册 github 时所填入的。
 
-[details="不一致会有哪些问题呢？"]
+:::details 不一致会有哪些问题呢？
 **如果不一致**，GitHub 还是能接收代码，但显示为“匿名提交”，你就拿不到绿点贡献记录。
-[/details]
+:::
 
 如：
 ```git
@@ -117,34 +124,41 @@ $ git config --global user.email "你的邮箱地址"   <- ┚
 ```
 好了，接下来配置 ssh 密钥。
 按下 `Win+R` ，输入 `Git` ，选择 `Git Bash`。
-![image|581x370](upload://l01H1oo5bqqnnh5fQ7HBLd6MU5K.png)
+
+![Git Bash](/images/blog/gitbash.png)
+
 输入 `ssh-keygen -t rsa` 并敲三下回车。
 
-[details="为什么敲三下回车？"]
+:::details 为什么敲三下回车？
 因为输入这个命令生成密钥时，会有提示问你是否需要设置密码，如果设置了话，每次使用 Git 都会用到密码，一般都是直接不写为空，直接回车就好。
-[/details]
+:::
 
 然后，输入 `cat ~/.ssh/id_rsa.pub`  查看密钥。
-![image|581x370](upload://8y7WH4NyBQUXH3Mll7nngV89FGX.png)
 
-密钥复制备用 ~~，待会下锅~~ 。
+![查看密钥](/images/blog/key.png)
+
+密钥复制备用， ~~待会下锅。~~ 
+
 打开 [你的 Github 密钥配置界面](https://github.com/settings/keys)
-![image|690x388](upload://tdCrbKzufclGUUrV8lwcLBVXiua.png)
+
+![密钥配置](/images/blog/configUI.png)
+
 点击 `New SSH key` ，将你的密钥输入进去并起一个 title 。
-![image|690x341](upload://c1BZfumpZtCroYHbsMxWhF00NgF.png)
+
+![起个title](/images/blog/titlekey.png)
 
 ## 无论何时……
 
- **[color=#fff][bgcolor=#FF4444]不要将你的 KEY 分享给他人！<br>不要将你的 KEY 分享给他人！<br>不要将你的 KEY 分享给他人！[/bgcolor][/color]**
+### **不要将你的 KEY 分享给他人！<br>不要将你的 KEY 分享给他人！<br>不要将你的 KEY 分享给他人！**
 
 
 自己的家门钥匙要自己守好，**钥匙都满天飞了还只想着锁门，你靠空气防盗？**
 
 
-[details="如果不慎泄露了 KEY ？"]
+:::details 如果不慎泄露了 KEY ？
 立刻！马上！按下右边的 **Delete** 按钮删掉它！
-![image|690x75](upload://tjJarkHP0v2qCKNDZ2HRMEyxYOB.png)
-[/details]
+![删除密钥](/images/blog/delkey.png)
+:::
 
 好，现在远程仓库完事了，接下来配置本地仓库。
 
@@ -154,70 +168,83 @@ $ git config --global user.email "你的邮箱地址"   <- ┚
 首先 在 VSCode 里安装简体中文语言包，详情请参阅：
 https://blog.csdn.net/mighty13/article/details/114420578
 
-![image|690x388](upload://dztSaCEkHXrqltwZgExjl1zys8E.png)
+![VSCode 界面](/images/blog/VSC.png)
 
-我们选择打开文件夹，找到你设置的 vitepress 项目目录。
-![image|690x388](upload://7dg3LOOtjQGt5fyLcGOJoMFVjuJ.png)
+我们选择打开文件夹，找到并在 VSCode 打开你设置的 vitepress 项目目录。
 
-按下 `Ctrl+J` 打开 `“终端”` 。
-输入：
+![打开你的项目目录](/images/blog/opendir.png)
+
+按下 `Ctrl+J` 打开 `“终端”` , 输入：
+
 ```git
 git init
 git branch -M main
 ```
 这两步分别 创建了一个本地仓库 并 重命名本地分支为 main 。
 
-[details="不理解为什么要重命名分支？"]
+:::details 不理解为什么要重命名分支？
 Github 中，项目的默认分支为 main，但 git 创建的本地分支默认为 master，如果不加重命名就提交，会导致下面的报错：
 ```bash
 error: src refspec main does not match any
 error: failed to push some refs to 'https://github.com/<你的用户名>/<你的仓库名>.git'
 
 ```
-[/details]
+:::
 
-接下来， 添加远程仓库。
+**接下来， 添加远程仓库。**
+
 回到你的仓库页，它应该是这样的：
-![image|690x388](upload://3YGxRusKeEsvlTua8zguzTPpEi6.png)
+
+![你的仓库](/images/blog/yourrepo.png)
 
 现在点击 `SSH` ，复制右边的形如
+
 ```link
 git@github.com:<你的用户名>/<你的仓库名>.git
 ```
+
 的地址。
 
 接下来继续在终端输入：
+
 ```bash
 git remote add origin <↑上面的地址>
 ```
 
-[details="可以在什么时候添加仓库？"]
+:::details 可以在什么时候添加仓库？
 init 之后， push 之前添加都可以，但考虑到可能会有人急着提交忘记添加仓库，故越早越好。
-[/details]
+:::
 
 接下来你可以用 VSCode 编写自己的作品，先试着修改 `markdown-examples.md` 和 `api-examples.md` 这两个初始页面。
 
 别忘了再次使用 `npm run docs:dev` 来启动 vitepress 。
 
-如果你还不熟悉 Markdown 语法：
-https://markdown.com.cn
+如果你还不熟悉 Markdown 语法，请参阅 [Markdown 教程](https://markdown.com.cn)
+
 **配置 vitepress 不属于本篇内容范畴，请自行STFW。**
 
 # 第四步：提交到 Github 并启用 Github Actions
 
 我们先回到项目仓库页。
 点击 `Settings` -> 右边栏的 `Pages` -> `Source/Github Actions` 。
-![image|690x388](upload://mYQtqmsX7IvGy0d47IFfptxObcc.png)
+
+![启用 Actions ](/images/blog/enableactions.png)
 
 接下来回到 VSCode 。
 
 找到 `config.mts`，打开：
-![image|690x388](upload://rtFwliIzPjF5BWKsGL610f4qerS.png)
+
+![你的 config.mts ](/images/blog/configmts.png)
+
+
 在第二行添加：
+
 ```typescript
 const base = "/blog-demo/";      // blog-demo 改成你仓库的名字
 ```
+
 再添加一行：
+
 ```
 export default defineConfig({
   base, //添加这一行
@@ -229,12 +256,13 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
     ],
-
+    //其它代码
 ```
 
 既然选择了使用 Github Actions ，那我们就需要写一份工作流文件。
 
 你可以自行 Google 搜索教程，也可以照抄这份文件：
+
 ```
 name: Deploy Pages
 
@@ -334,7 +362,9 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 ```
+
 也不要忘了 `.gitignore` 文件：
+
 ```
 node_modules
 dist
@@ -351,14 +381,17 @@ git commit -m "初次提交"
 git push origin main
 ```
 回到你的仓库地址，刷新一下，你应该能看到一个黄点，这代表 Github Actions 正在运行，可以查看详细信息。
-![image|690x388](upload://hqWME0UPrKG8INhPTJGPJCRO4VJ.png)
+
+![正在工作中的 Actions ](/images/blog/actionsrunning.png)
 
 如果一切顺利，你应该看到的界面如下：
-![image|690x388](upload://gKvGDfWxJXMIBgZ4wZdJKu6hKU8.png)
+
+![ACtions 完成部署](/images/blog/finished.png)
 
 这个时候尝试访问
-`
+```url
 https://你的Github用户名.github.io/你的仓库名/
-`
+```
 应该能够正常显示。
-![image|690x388](upload://tRszgURvY2gr6vDAEPn4Wy4k6Kd.png)
+
+![成功部署的博客](/images/blog/final.png)
