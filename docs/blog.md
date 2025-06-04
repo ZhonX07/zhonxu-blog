@@ -165,8 +165,7 @@ $ git config --global user.email "你的邮箱地址"   <- ┚
 # 第三步：配置本地仓库
 在接下来的步骤中，为了方便，我们在 VSCode 里用终端操作。
 
-首先 在 VSCode 里安装简体中文语言包，详情请参阅：
-https://blog.csdn.net/mighty13/article/details/114420578
+首先 在 VSCode 里安装简体中文语言包，详情请参阅：[VScode：将VScode界面的显示语言改为简体中文，切换VScode界面的显示语言](https://blog.csdn.net/mighty13/article/details/114420578)
 
 ![VSCode 界面](/images/blog/VSC.png)
 
