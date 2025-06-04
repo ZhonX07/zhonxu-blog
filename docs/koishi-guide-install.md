@@ -110,19 +110,3 @@ Get-ComputerInfo | Select-Object WindowsProductName, WindowsVersion, OsBuildNumb
 图为查看 Windows 系统版本的三个常用方法。左为B，右为C，中间靠左的窗口为A。
 :::
 ![查看 Windows 系统版本的三个常用方法](/images/install/osver.png)
-
-## 常见问题
-
-### 1.安装失败
-
-你可能会遇到这样的问题（图源：[Koishi 论坛](https://forum.koishi.xyz/t/topic/617)）：
-
-![安装失败](/images/install/koiinstallfailed.jpg)
-
-可能的解决方法：  
-1.如果之前安装过 Koishi ：  
-请参考帖子[彻底卸载/清理/删除/初始化/重置 Koishi](https://forum.koishi.xyz/t/topic/299)。  
-2.如果未安装过：  
-关闭安装程序，打开你的 Microsoft Edge 浏览器并根据下方截图进行关闭。
-![关闭你的 Edge](/images/install/close-edge.png)
-图片提供：H4M5TER
