@@ -25,18 +25,46 @@ features:
     details: 不定期更新内容，记录学习和开发过程
 ---
 
-## 👋 欢迎来到我的博客
+<div class="home-content">
+  <div class="content-section">
+    <h2>👋 欢迎来到我的博客</h2>
+    <p>这里记录了我在开发过程中的学习笔记、教程分享和项目经验。</p>
+    
+    <h3>⏱️ 最近更新</h3>
+    <ul>
+      <li><a href="/koishi-guide-install">Koishi 新手教程：安装部署</a></li>
+      <li><a href="/koishi-guide-config">Koishi 新手教程：配置</a></li>
+      <li><a href="/SQ">提问的智慧</a></li>
+    </ul>
+  </div>
+  
+  <div class="team-section">
+    <h2>关于作者</h2>
+    <TeamMembers />
+  </div>
+</div>
 
-这里记录了我在开发过程中的学习笔记、教程分享和项目经验。
+<style scoped>
+.home-content {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  align-items: flex-start;
+}
 
-### ⏱️ 最近更新
+.content-section {
+  flex: 1;
+}
 
-- [Koishi 新手教程：安装部署](/koishi-guide-install)
-- [Koishi 新手教程：配置](/koishi-guide-config)
-- [提问的智慧](/SQ)
+.team-section {
+  flex: 1;
+}
 
-## 关于作者
-
-<TeamMembers />
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+  }
+}
+</style>
 
 
