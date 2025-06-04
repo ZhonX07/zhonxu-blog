@@ -8,6 +8,11 @@ export default defineConfig({
   description: "基于 Vitepress",
   appearance: 'force-dark', // 禁用主题切换功能，并锁定为暗色模式
   
+  // 添加 favicon 配置
+  head: [
+    ['link', { rel: 'icon', href: `${base}favicon.ico` }]
+  ],
+  
   // 禁用死链检测
   ignoreDeadLinks: true,
   
@@ -37,6 +42,7 @@ export default defineConfig({
     sidebar: [
       {
         text: '教程',
+        collapsed: true,
         items: [
           { text: '入门 Koishi：安装部署', link: '/koishi-guide-install' },
           { text: '入门 Koishi：配置', link: '/koishi-guide-config' },
