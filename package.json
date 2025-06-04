@@ -15,7 +15,6 @@
     "node": ">=18"
   },
   "dependencies": {
-    "@giscus/vue": "^3.1.1",
     "pnpm": "^10.11.0"
   }
 }
