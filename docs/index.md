@@ -5,9 +5,6 @@ layout: home
 hero:
   name: "ZhonXu 的个人博客"
   tagline: Given enough eyeballs, all bugs are shallow.
-  image:
-    src: /logo.png
-    alt: ZhonXu Logo
   actions:
     - theme: brand
       text: 教程：提问的智慧
@@ -38,25 +35,8 @@ features:
 - [Koishi 新手教程：配置](/koishi-guide-config)
 - [提问的智慧](/SQ)
 
-<style>
-:root {
-  --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
-  --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
-  --vp-home-hero-image-filter: blur(44px);
-}
+## 关于作者
 
-@media (min-width: 640px) {
-  :root {
-    --vp-home-hero-image-filter: blur(56px);
-  }
-}
-
-@media (min-width: 960px) {
-  :root {
-    --vp-home-hero-image-filter: blur(68px);
-  }
-}
-</style>
+<TeamMembers />
 
 

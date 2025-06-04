@@ -4,6 +4,7 @@ import { toRefs, watch } from 'vue'
 import { useData, useRoute } from 'vitepress'
 import './styles/index.css'
 import './styles/no-select.css'
+import TeamMembers from './components/TeamMembers.vue'
 
 // 彩虹背景动画样式
 let homePageStyle: HTMLStyleElement | undefined
@@ -11,6 +12,8 @@ let homePageStyle: HTMLStyleElement | undefined
 const theme = {
   extends: DefaultTheme,
   enhanceApp({ app, router }) {
+    // 注册团队成员组件
+    app.component('TeamMembers', TeamMembers)
 
     // 注册组件或其他应用级增强
     if (typeof window !== 'undefined') {
