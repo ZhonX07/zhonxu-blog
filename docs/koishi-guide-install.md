@@ -3,9 +3,12 @@
 ## 安装Koishi
 
 Koishi 支持包括`MacOS`、`Windows`、`Linux`、`Docker`、`模板项目`以及`Android`（不建议）在内的部署方式。
-:::warning 使用 Docker 部署须知
+:::info 使用 Docker 部署须知
 *Docker 等容器化软件是以服务生产环境而开发的应用平台，在使用此类软件部署之时，我们相信你已经掌握了运维一台服务器所必须的知识，同时也理解了容器化的概念与相关软件的基础操作。如若不然，在除路由器或 NAS 等特殊环境外，请 [选择其他安装方式](https://koishi.chat/zh-CN/manual/starter/)。*
 :::
+> [!caution] 为何不建议使用 Koishi On Android ？
+> 此项目仍在早期开发中，部分功能可能不可用或存在 bug 。
+
 
 首先，前往 [Koishi 官网](https://koishi.chat) 下载适合你版本的 Koishi，以 Windows 11 为例。  
 

@@ -20,23 +20,33 @@ hero:
       link: https://github.com/ZhonX07
 
 features:
-  - icon: 📚
-    title: Koishi 教程
-    details: 从安装到配置，全面覆盖 Koishi 框架的使用方法
-    link: /koishi-guide-install
-  - icon: 💡
-    title: 提问技巧
-    details: 学会如何高效地提问，获得更好的帮助
-    link: /SQ
-  - icon: 🚀
-    title: 开源项目
-    details: 分享一些有趣的开源项目和代码片段
-    link: https://github.com/ZhonX07
-  - icon: 🎯
-    title: 实用工具
-    details: 收集和分享各种开发工具和资源
-    link: /ASK-GUIDE
+  - title: Koishi 教程
+    details: 详细的 Koishi 机器人框架安装和配置指南
+  - title: 技术分享
+    details: 分享前端开发、工具使用等技术内容，偶尔也会分享点冲浪时发现的好东西
+  - title: 持续更新
+    details: 不定期更新内容，记录学习和开发过程
 ---
+
+<script setup>
+import { VPTeamMembers } from 'vitepress/theme'
+
+const members = [
+  {
+    avatar: 'https://www.github.com/ZhonX07.png',
+    name: 'ZhonXu',
+    title: '博客作者',
+    desc: '勇者よ、光が貴方と共にあらんことを。',
+    links: [
+      { icon: 'github', link: 'https://github.com/ZhonX07' }
+    ]
+  }
+]
+</script>
+
+## 关于作者
+
+<VPTeamMembers size="medium" :members="members" />
 
 ## 👋 欢迎来到我的博客
 
