@@ -34,6 +34,7 @@ features:
       <li><a href="/koishi-guide-install">Koishi 新手教程：安装部署</a></li>
       <li><a href="/koishi-guide-config">Koishi 新手教程：配置</a></li>
       <li><a href="/blog">使用 Github Pages 部署你的 Vitepress Blog</a></li>
+      <li><a href="/tools">前端工具箱</a></li>
     </ul>
     
   </div>
