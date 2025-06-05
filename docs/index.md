@@ -31,10 +31,10 @@ features:
     <p>这里记录了我在开发过程中的学习笔记、教程分享和项目经验。</p>
     <h3>⏱️ 最近更新</h3>
     <ul class="recent-updates">
-      <li><a href="/koishi-guide-install">Koishi 新手教程：安装部署</a></li>
-      <li><a href="/koishi-guide-config">Koishi 新手教程：配置</a></li>
-      <li><a href="/blog">使用 Github Pages 部署你的 Vitepress Blog</a></li>
-      <li><a href="/tools">前端工具箱</a></li>
+      <li><a href="/zhonxu-blog/koishi-guide-install">Koishi 新手教程：安装部署</a></li>
+      <li><a href="/zhonxu-blog/koishi-guide-config">Koishi 新手教程：配置</a></li>
+      <li><a href="/zhonxu-blog/blog">使用 Github Pages 部署你的 Vitepress Blog</a></li>
+      <li><a href="/zhonxu-blog/tools">前端工具箱</a></li>
     </ul>
     
   </div>
