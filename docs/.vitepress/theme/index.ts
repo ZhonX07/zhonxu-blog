@@ -26,7 +26,7 @@ const theme = {
     if (typeof window !== 'undefined') {
       watch(
         () => router.route.data.relativePath,
-        () => updateHomePageStyle(location.pathname === '/'),
+        () => updateHomePageStyle(location.pathname === '/zhonxu-blog/'),
         { immediate: true },
       )
     }
@@ -38,6 +38,7 @@ const theme = {
     // 启用图片查看器插件
     imageViewer(route);
 
+    // 更新 Giscus 配置，确保仓库信息正确
     giscusTalk({
       repo: 'ZhonX07/zhonxu-blog',
       repoId: 'R_kgDOOyofNQ',
@@ -46,12 +47,17 @@ const theme = {
       mapping: 'pathname',
       inputPosition: 'top',
       lang: 'zh-CN',
-      lightTheme: 'noborder_dark',
-      darkTheme: 'noborder_dark',
+      // 修复主题配置
+      lightTheme: 'dark',
+      darkTheme: 'dark',
+      // 添加加载配置
+      loading: 'lazy'
     }, {
       frontmatter,
       route
-    }, true);
+    }, 
+    // 确保启用评论
+    true);
   }
 }
 
