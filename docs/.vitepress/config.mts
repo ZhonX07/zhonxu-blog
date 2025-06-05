@@ -8,10 +8,9 @@ export default defineConfig({
   description: "基于 Vitepress",
   appearance: 'force-dark', // 禁用主题切换功能，并锁定为暗色模式
   
-  // 添加 favicon 和其他 head 配置
+  // 添加 favicon 配置
   head: [
-    ['link', { rel: 'icon', href: `${base}favicon.ico` }],
-    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }]
+    ['link', { rel: 'icon', href: `${base}favicon.ico` }]
   ],
   
   // 禁用死链检测
